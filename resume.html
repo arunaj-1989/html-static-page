@@ -1,3 +1,246 @@
-
+<!DOCTYPE html>
 <html>
+<title>Personal Site</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+    <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="resume.html" class="w3-bar-item w3-button">Resume</a>
+    <a href="Architecture1.html" class="w3-bar-item w3-button">Blog</a>
+  </div>
+
+
+  <div class="w3-teal">
+    <button class="w3-button w3-teal w3-large" onclick="w3_open()">☰</button>
+    <div class="w3-container">
+    </div>
+  </div>
+
+ <br>
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+    <!-- Left Column -->
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="./images/arunaj-edited.png" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-white">
+            <h2>Arunaj Purushothaman</h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Technical Consultant</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>arunaj@outlook.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+91-8137817741</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Bangalore, IN</p>
+          <hr>
+          
+          <p class="w3-large"><b><i class="fa fa-file-text fa-fw w3-margin-right w3-text-teal"></i>SUMMARY</b></p>
+          <p align="justify">Experienced IT Engineer with years of Experience and knowledge on Amazon Web Services(EC2, S3, EBS, EFS, ELB, VPC, VPN, Lamba,
+            Migration Services, CloudFront, CloudFormation, Route53, IAM), Application Monitoring - ELK Stack (Elasticsearch, Logstash, Kibana) , Infrastructure Automation using scripting,
+            configuration automation tool - Ansible in Linux Environment (Redhat and Debian) and Continuous Integration and Continuous
+            Deployement - jenkins</p>
+            <hr>
+          <p class="w3-large"><b><i class="fa fa-star fa-fw w3-margin-right w3-text-teal"></i>SKILLS</b></p>
+          <p>Cloud Computing</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">80%</div>
+          </div>
+          <p>Linux OS</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
+              <div class="w3-center w3-text-white">80%</div>
+            </div>
+          </div>
+          <p>Elastic Stack</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+          </div>
+          <p>Ansible</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">70%</div>
+          </div>
+          <hr>
+        </div>
+
+      </div><br>
+      
+      <div class="w3-card w3-container w3-white"><br>   
+        <h3>Download Resume</h3>     
+        <div class="w3-section">
+          <a href="Resume-arunaj.pdf">
+            <button type="button" class="w3-btn w3-blue fa fa-download" style="width:100%"></button>
+          </a>
+        </div>
+          <hr>
+      </div>  
+       <br>
+      <div class="w3-card w3-container w3-white"><br>   
+        <h3>My Projects</h3>     
+        <div class="w3-section">
+          <a href="Architecture1.html">
+            <button type="button" class="w3-btn w3-blue fa fa-forward" style="width:100%"></button>
+          </a>
+        </div>
+          <hr>
+      </div>  
+
+    <!-- End Left Column -->
+
+    <!--
+      <a href="geeksforgeeks.png" download="GFG">
+      <button type="button">Download</button>
+      </a> 
+    -->
+
+
+    <br>
+    </div>
+    <!-- Right Column -->
+    <div class="w3-twothird">
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-text-grey"><b>TECHNICAL CONSULTANT - <span class="w3-tag w3-teal w3-round">Hewlett Packard Enterprise</span></b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2018 - Present</h6>
+          <ul>
+            <li>Used AWS Services like EC2, S3, IAM, VPC, Cloud Watch, Cloud Trail to manage and monitor the application</li>
+            <li>Performed infrastructure migration from on-premises to aws cloud using AWS Server Migration Service</li>
+            <li>Infrastructure design for the ELK Cluster.</li>
+            <li>Used Elasticsearch, Logstash and Kibana for log analysis, search pattern for our in-house application</li>
+            <li>Installed logstash and started the logstash in our environment</li>
+            <li>Setting up beats at agent level to push data to logstash</li>
+            <li>Write queries and filters in Logstash to trim the data</li>
+            <li>Working with the Kibana dashboard for the overall build status with drill down features</li>
+            <li>Used Kibana plugin to visualize for elasticsearch</li>
+            <li>Providing Global Search with Elasticsearch</li>
+            <li>Troubleshoot Application servers, load time, Traffic spikes, database connectivity.</li>
+            <li>Clearing outdated files, file Permission management</li>
+            <li>Mount point analysis and swapping mount points</li>
+            <li>Linux Patch update using ansible configuration automation tool.</li>
+            <li>ActiveMQ queue analysis and troubleshooting</li>
+            <li>Automation of Infrastructure using scripting and Ansible</li>
+            <li>Worked with HPE 3PAR Storage solution for data migration.</li>
+            </ul>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-text-grey"><b>SENIOR PROCESS EXECUTIVE - <span class="w3-tag w3-teal w3-round">Cognizant</span></b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2017 - Oct 2018</h6>
+          <ul>
+            <li>Worked with HPE 3PAR StorServ 7400c storage solution.</li>
+            <li>Creating volumes and common provisioning group(CPGs)</li>
+            <li>Create TPVV and TDVV volumes as per requirements of client.</li>
+            <li>Exporting the new volume to host systems.</li>
+            <li>Work with PD Failures and Data Migration on PDs.</li>
+            <li>Advanced trouble shooting skills and identify the severity of the issue, Ability to Resolving issues quickly and Prepare RCA.</li>
+            <li>Ensure timely resolution of tickets within SLA’s and escalate critical tickets to next higher levels based on priority and impact of the issue.</li>
+            </ul>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-text-grey"><b>ADMINISTRATOR - <span class="w3-tag w3-teal w3-round">AL FARH & AL SOROUR</span></b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2014 - May 2016</h6>
+          <ul>
+            <li>Maintaining the overall IT infrastructure for the showroom.</li>
+            <li>Maintenance of CCTV infrastructure system.</li>
+            <li>Attendance management system for the showroom</li>
+            <li>Installation and Configuration of POS Application</li>
+            <li>Managing the infrastructure inventory.</li>
+            </ul>
+            <hr>
+        </div>
+
+        <div class="w3-container">
+          <h5 class="w3-text-grey"><b>IT SUPPORT ENGINEER - <span class="w3-tag w3-teal w3-round">HUTAIB INFOTECH SOLUTIONS</span></b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2013 - Jan 2014</h6>
+          <ul>
+            <li>Active directory, DHCP, DNS management.</li>
+            <li>Raid Configuration of Server.</li>
+            <li>Diagnosing and rectifying hardware, networking, printers, copiers and software related problems</li>
+            <li>Installing and configuring new computers/ printers/ servers/ networking devices (switches, routers, etc.)</li>
+            <li>Storage devices - NAS Server.</li>
+            <li>Repairing/upgrading PC hardware and software</li>
+            <li>Troubleshooting printers/scanners/copiers</li>
+            <li>Maintaining inventory of equipment and supplies</li>
+            <li>Planning and installing physical IT network</li>
+            <li>Troubleshoot hardware, software</li>
+            <li>Make recommendations about purchase of technology resources</li>
+            <li>Research current and potential resources and services</li>
+            <li>Install work stations & servers</li>
+            <li>Connect and set up hardware</li>
+            <li>Load all required software</li>
+            </ul>
+            <hr>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <div class="w3-container">
+          <h6 class="w3-text-teal"><i class="fa fa-book fa-fw w3-margin-right"></i>B.TECH CSE</h6>
+          <h5 class="w3-opacity"><b>SRI MANAKULA VINAYAGAR ENGINEERING COLLEGE - Pondicherry University</b></h5>
+          <p>Passed with GPA 7.2/10 from September 2007 to June 2011 located in Pondicherry, India</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h6 class="w3-text-teal"><i class="fa fa-book fa-fw w3-margin-right"></i>HIGHER SECONDARY </h6>
+          <h5 class="w3-opacity"><b>ST. PATRICKS MATRIC HIGHER SECONDARY SCHOOL</b></h5>
+          <p>Passed with 70%. During September 2006 and June 2007 located in Pondicherry, India</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h6 class="w3-text-teal"><i class="fa fa-book fa-fw w3-margin-right"></i>10TH STANDARD </h6>
+          <h5 class="w3-opacity"><b>ST. PATRICKS MATRIC HIGHER SECONDARY SCHOOL</b></h5>
+          <p>Passed with 80%. During September 2006 and June 2007 located in Pondicherry, India</p>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+</body>
 </html>
+
+
+<script>
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+  }
+  
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+  </script>
