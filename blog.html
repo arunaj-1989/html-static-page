@@ -1,2 +1,91 @@
+
+<!DOCTYPE html>
 <html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>My Projects</b></h1>
+  <p>Few of my understandings on cloud technologies with serverless and serverfull architecture.<span class="w3-tag">By Arunaj Purushothaman</span></p>
+</header>
+
+
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+    <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="resume.html" class="w3-bar-item w3-button">Resume</a>
+    <a href="Architecture1.html" class="w3-bar-item w3-button">Blog</a>
+  </div>
+
+  <div class="w3-red">
+    <button class="w3-button w3-red w3-large" onclick="w3_open()">☰</button>
+    <div class="w3-container">
+    </div>
+  </div>
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col l9 s12">
+
+<!-- Blog entry -->
+<div class="w3-card-4 w3-margin w3-white">
+    <div class="w3-container">
+        <h3><b>Static Website Hosting</b></h3>
+        <img src="images/AWS Static Website Hosting with godaddy.jpeg" alt="Nature" style="width:80%">
+        <h5><b>Host a static website in S3 with an serverless architecture.</b> <span class="w3-opacity">June 05, 2021</span></h5>
+      </div>
+  
+      <div class="w3-container">
+        <p align="justify">Here i have hosted a Personal website in AWS cloud, using an Serverless architecture. 
+            The use of Serverless architecture has grown enormously when compared with the serverfull architecture.
+          Main reasons are Cost, easy to scale application and higher performance rate. </p>
+        <h3>what is Serverless architecture?</h3>
+        <p align="justify">
+            A serverless architecture is a way to build and run applications and services without having to manage infrastructure. 
+            Your application still runs on servers, but all the server management is done by AWS. 
+            You no longer have to provision, scale, and maintain servers to run your applications, databases, and storage systems.
+        </p>
+
+      </div>
+    </div>
+<!-- END BLOG ENTRIES -->
+</div>
+<!-- END GRID -->
+</div><br>
+<!-- END w3-content -->
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+</body>
 </html>
+
+
+<script>
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+    
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+</script>
